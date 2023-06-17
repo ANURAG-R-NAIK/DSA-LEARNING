@@ -75,13 +75,63 @@
 
 # Q. Magic number to the power of 5 question
 
-n = 3
-res = 0
-base = 5
-while n > 0:
-    lastbit = n &  1 #gives the last bit of the number
-    n = n >> 1 #right shift to get the next bit of the number
-    res += lastbit * base #base is 5 powers so multiply by the lastbit
-    base = base * 5  # doing the powersof 5 updating the base
-print(res)
+# n = 3
+# res = 0
+# base = 5
+# while n > 0:
+#     lastbit = n &  1 #gives the last bit of the number
+#     n = n >> 1 #right shift to get the next bit of the number
+#     res += lastbit * base #base is 5 powers so multiply by the lastbit
+#     base = base * 5  # doing the powersof 5 updating the base
+# print(res)
     
+# -----
+
+# this gives the  number of digits required to represent the number n in the base of b
+# import math
+# n = 10
+# b = 2
+
+# ans = int(math.log(n) / math.log(b)) + 1
+# print(ans)
+
+#---
+# Q. to find the power of a number
+
+# base = 3
+# power = 6
+# res = 1
+
+# while power>0:
+#     if (power&1) == 1: #measn that is a set bit
+#         res *= base # multiply with the base and multiply to result
+#     base *= base #update base
+#     power = power >> 1 #again right shift foe the next bit
+# print(res)
+
+#-----
+
+# Q.count the number of set bits
+
+# n = 10
+# cnt = 0
+# while n>0:
+#     k = n & (-n) # gives the first et bit
+#     if k>0:
+#         cnt += 1 # increment cnt
+#     n -= (n & (-n)) #remove that set bit
+# print(cnt)
+
+
+#-----
+# XOR o f numbers from 0 can be given as , a be the number
+''' a % 1 = 0  xor is a
+ a % 1 = 1  xor is 1
+ a % 1 = 2  xor is a + 1
+ a % 1 = 3  xor is 0
+'''
+    
+#------
+# XOR of 2 number beteween two ranges
+# xor from a to b is equal to 
+# xor from 0 to b aored with with xor from 0 to a 
