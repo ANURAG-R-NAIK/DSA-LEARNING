@@ -1,0 +1,6 @@
+a="codeleet"
+
+
+res=[]*len(a)
+
+print(res)
