@@ -70,3 +70,18 @@
 # k = n&(-n)
 
 # print(k)
+
+#-----
+
+# Q. Magic number to the power of 5 question
+
+n = 3
+res = 0
+base = 5
+while n > 0:
+    lastbit = n &  1 #gives the last bit of the number
+    n = n >> 1 #right shift to get the next bit of the number
+    res += lastbit * base #base is 5 powers so multiply by the lastbit
+    base = base * 5  # doing the powersof 5 updating the base
+print(res)
+    
