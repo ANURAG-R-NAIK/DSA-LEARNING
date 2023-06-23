@@ -135,3 +135,45 @@
 # XOR of 2 number beteween two ranges
 # xor from a to b is equal to 
 # xor from 0 to b aored with with xor from 0 to a 
+
+#----
+# Q. flipping an image in leetcode question
+
+# image = [[1,1,0],[1,0,1],[0,0,0]]
+
+# for row in image:
+#     row.reverse()
+# for row in image:
+#     for ele in row:
+#         ele = 1
+        
+# print(image) # NOT COMPLETED
+
+#-------------------------------------------------------------------------------------------------------------------
+# VIDEO 2
+
+#prime number
+# k = int(input('enter the num'))
+
+# for i in range(2, k):
+#     if k % i == 0:
+#         print('not prime')
+#     else:
+#         print('prime')
+
+#-----
+#prime number
+
+# k = int(input('enter the number'))
+
+# if k <= 1:
+#     print(False)
+    
+# c = 2
+# while (c * c) <= k:
+#     if k %c == 0:
+#         print(False)
+#     c+=1
+
+#-----
+
