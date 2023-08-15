@@ -40,11 +40,14 @@
 
 #-----
 
-def sum(n):
-    if n == 0:
-        return 0
-    return (n%10) + sum(n//10)     
-#here n%10 gives the last digit of the number here that is 2
-# then n gets updated to n//10 that is 134, Gin keep repeating the procedure till we add all the numbers
+# with recusion
+# def sum(n):
+#     if n == 0:
+#         return 0
+#     return (n%10) + sum(n//10)     
+# #here n%10 gives the last digit of the number here that is 2
+# # then n gets updated to n//10 that is 134, Gin keep repeating the procedure till we add all the numbers
 
-print(sum(1342))
+# print(sum(1342))
+
+#-------
