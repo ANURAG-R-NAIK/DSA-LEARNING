@@ -85,19 +85,52 @@
   
   
 # HERE WE TRY TO RETURN THE ANSWER IN THE ARRAY FORMAT      
-def padarray(p, up):
-    if len(up) == 0:    
-        return p 
+# def padarray(p, up):
+#     if len(up) == 0:    
+#         return p 
     
-    digit = int(up[0])
+#     digit = int(up[0])
     
-    lst = []
+#     lst = []
     
-    for i in range((digit - 1) * 3, digit * 3):
-        ch = chr(ord('a') + i)      
+#     for i in range((digit - 1) * 3, digit * 3):
+#         ch = chr(ord('a') + i)      
         
-        lst.append(padarray(p + ch, up[1:]))
+#         lst.append(padarray(p + ch, up[1:]))
         
-    return lst  
+#     return lst  
     
-print(padarray("", "12"))
+# print(padarray("", "12"))
+
+# AMAZON LEVEL QUESTION
+
+# A DICE BEING THROWNA ND THE NUMBER FOR MAKING A GIVEN A TAGET VALUE
+
+# 
+
+# def dice(p, target):
+#     if target == 0:
+#         print(p)
+#         return  
+    
+#     for i in range(1, 7):
+#         if i <= target:
+#             dice(p + str(i), target - i)
+        
+# dice("", 4)
+
+# MAZE PROBLEM USING BACKTRACKING
+
+def count(r, c):
+    if r== 1 or c == 1:
+        return 1
+    
+    left = count(r-1, c)
+    right = count(r, c-1)
+    return left+right
+
+print(count(3,3))
+
+
+        
+        
