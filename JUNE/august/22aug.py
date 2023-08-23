@@ -121,15 +121,15 @@
 
 # MAZE PROBLEM USING BACKTRACKING
 
-def count(r, c):
-    if r== 1 or c == 1:
-        return 1
+# def count(r, c):
+#     if r== 1 or c == 1:
+#         return 1
     
-    left = count(r-1, c)
-    right = count(r, c-1)
-    return left+right
+#     left = count(r-1, c)
+#     right = count(r, c-1)
+#     return left+right
 
-print(count(3,3))
+# print(count(3,3))
 
 
         

@@ -1,1 +1,1 @@
-eturn p
+ob1.cal()
