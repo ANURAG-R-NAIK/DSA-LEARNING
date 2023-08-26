@@ -93,3 +93,24 @@
 # ob1 = employee()
 # del ob1
 
+# # DSA
+# arr = [int(i) for i in input("enter").split()]
+
+# maxlen = 0
+# sum = {}
+# for i in range(len(arr)):
+#     sum += arr[i]
+    
+#     if sum == 0:
+#         maxlen = i+1
+        
+#     key = str(sum)
+    
+#     sum[key] = sum.get(key, 0) + 1
+    
+#     for i, j in sum.items():
+#         if len(j) > 1:
+#             max = v[len(v) - 1] - v[0]
+#             maxlen = max(maxlen, max)
+            
+#     print(maxlen)
