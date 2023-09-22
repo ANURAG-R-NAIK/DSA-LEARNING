@@ -311,5 +311,161 @@
 
 #--------------------------------------
 
+# arr = [int(i) for i in input('enter').split()]
+# sum = int(input('enter the num'))
 
+# def find(arr, sum):
+#     if len(arr)<2:
+#         return 0
+#     k = sorted(arr)
+#     for i in range(len(k) - 1):
+#         if arr[i] + arr[i+1] <= sum:
+#             return arr[i] * arr[i+1]
+#     return -1
+
+#-------------------------------------
+
+
+# QUESTION 8 - didnot understand
+
+
+#---------------------
+
+# def MoveHyphen(str,n):
+#     l = ''
+#     cnt = 0
+#     for i in str:
+#         if i == '-':
+#             cnt += 1
+#         else:
+#             l += i
+#     return '-'*cnt + l
+
+# str = input('enter the string')
+# n = len(str)
+# print(MoveHyphen(str,n))
+
+#-----------------------
+
+
+# def NumberOfCarries(num1 , num2):
+#     car = 0
+#     s1 = str(num1)
+#     s2 = str(num2)
+#     cnt = 0
+    
+    
+#     for i in range(len(min(s1, s2)) - 1,0,-1):
+#         if int(s1[i]) + int(s2[i]) + car > 9:
+#             car= 1
+#             cnt += 1
+#         else:
+#             car = 0
             
+#     return cnt
+
+# num1 = int(input('enter the num1 -- '))
+# num2 = int(input('enter the num2 -- '))
+# print(NumberOfCarries(num1, num2))
+            
+            
+#---------------------------
+
+# def ReplaceCharacter(Char,n,ch1,ch2):
+#     a = ch2
+#     b = ch1
+#     lst = list(Char)
+    
+#     for i in range(len(lst)):
+#         if lst[i] == a:
+#             lst[i] = b
+#         elif lst[i] == b:
+#             lst[i] = a
+#     # print(lst)
+#     return "".join(lst)
+
+# c = input('enter the string')
+# ch1 = input('enter the char1')
+# ch2 = input('enter the char2')
+# n = len(c)
+# print(ReplaceCharacter(c,n,ch1,ch2))   
+
+#----------------------------
+
+# def OperationChoices(c, a, b):
+#     if c == 1:
+#         return a+b
+#     elif c == 2:
+#         return a - b
+#     elif c == 3:
+#         return a*b
+#     elif c == 4:
+#         return a / b
+#     else:
+#         print('invalid literal')
+# a = int(input('enter a'))    
+# b = int(input('enter b'))  
+# c = int(input('enter the num - '))
+# print(OperationChoices(c,a,b))
+
+#---------------------------------
+
+# def MaxExponents(a,b):
+#     cnt = 0
+#     maxi = 0
+#     for i in range(a, b+1):
+#         while i % 2 == 0:
+#             i = i // 2
+#             cnt += 1
+#         maxi = max(cnt, maxi)
+#     return maxi
+
+# a = int(input('enter a'))
+# b = int(input('enter b'))
+# print(MaxExponents(a,b))
+        
+#---------------------
+
+# def Calculate(m, n):
+#     cnt = 0
+    
+#     for i in range(m, n+1):
+#         if i % 3 == 0 and i % 5 == 0:
+#             cnt += i
+#     return cnt
+# m = int(input('enter the num'))
+# n = int(input('enter the num'))
+# print(Calculate(m, n))
+
+#------------------------
+
+# n = int(input('enter the size'))
+# l = []
+# i = 0
+# while i < n:
+#     x = int(input('enter the num'))
+#     l.append(x)
+#     i += 1
+# e = []
+# o = []
+# for i in range(len(l)):
+#     if i % 2 == 0:
+#         e.append(l[i])
+#     else:
+#         o.append(l[i])
+# e.sort()
+# o.sort()
+# print(e[-2] + o[-2])
+
+#-----------------------
+
+# x1, y1 = 1,1
+# x2, y2 = 2,4
+# x3, y3 = 3,6
+# f = ((x1-x2)**2 + (y1-y2)**2)**0.5
+# g = ((x1-x3)**2 + (y1-y3)**2)**0.5
+# k = ((x3-x2)**2 + (y3-y2)**2)**0.5
+# print(f+g+k)
+
+        
+    

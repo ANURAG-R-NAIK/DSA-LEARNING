@@ -1,13 +1,8 @@
-x = input('enter the string')
 
-# i = x[0]
-
-# for i in range(1, len(x) - 1, 2):
-#     if x[i] == 'A':
-#         i = i & x[i+1]
-#     elif x[i] == 'B':
-#         i = i | x[i+1]
-#     elif x[i] == 'C':
-#         i = i ^ x[i+1]
-        
-# print(i)
+# x1, y1 = 1,1
+# x2, y2 = 2,4
+# x3, y3 = 3,6
+# f = ((x1-x2)**2 + (y1-y2)**2)**0.5
+# g = ((x1-x3)**2 + (y1-y3)**2)**0.5
+# k = ((x3-x2)**2 + (y3-y2)**2)**0.5
+# print(f+g+k)

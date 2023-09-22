@@ -7,15 +7,44 @@
 #     def getname(self):
 #         return self.name
     
-#     def isemployee(self):
+#     def isemp(self):    
 #         return False
     
-# class employee(person): # HERE WE SEE THAT EMPLOYEE IS A CLASS INHERITING FROM PERSON
+# class emp(person):
     
-#     def isemployee(self):
+#     def isemp(self):
 #         return True
     
-# em = person("rahul")
-# print(em.getname(), em.isemployee())
-# em2 = person("anurag")
-# print(em2.getname(), em2.isemployee())
+# ob1 = person("g1")
+# ob2 = emp('g2')
+
+# print(ob1.getname(), ob1.isemp())
+# print(ob2.getname(), ob2.isemp())
+
+######################################################
+
+
+class person(object):
+    
+    def __init__(self, name, id):
+        self.name = name
+        self.id = id
+        
+    def display(self):
+        print(self.name)
+        print(self.id)
+        
+    
+    
+class emp(person):
+    
+    def __init__(self, name, id, salary, post):
+        self.salary = salary
+        self.post = post
+        
+    
+person.__init__(self, name, id)
+
+a = emp('anurag', 222222, 20000000, "intern")
+
+a.display()
